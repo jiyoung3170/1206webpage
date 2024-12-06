@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald 웹페이지</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <ul class="gnb">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Sitemap</a></li>
+        </ul>
+        <nav class="nav">
+            <div class="logo">
+                McDonald
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">What’s New</a></li>
+                <li><a href="#">Story</a></li>
+            </ul>
+            <ul class="m_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">What’s New</a></li>
+                <li><a href="#">Story</a></li>
+            </ul>
+            <button type="button" class="m_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    <div class="main">
+        <video src="imgs/video.mp4" autoplay loop muted></video>
+        <div class="main_title">
+            <h1>영원한 오리지널 1955 버거</h1>
+            <p>
+                113g 두툼한 순 쇠고기 패티,
+                특별한 1955 소스에 깊은 풍미의 그릴드 어니언까지!<br>
+                맥도날드가 처음 생긴 1955년의 맛을 담은<br>
+                영원한 오리지널 1955 버거
+            </p>
+            <a href="#">view detail</a> 
+        </div>
+    </div> <!-- main end-->
+    <div class="contents">
+        <p>RECENT NEWS</p>
+        <ul class="list">
+            <li>
+                <a href="#">
+                    <img src="imgs/1.jpg" alt="">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae minus, eaque corrupti vero ad maiores!
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="imgs/2.jpg" alt="">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae minus, eaque corrupti vero ad maiores!
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="imgs/3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae minus, eaque corrupti vero ad maiores!
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="imgs/4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae minus, eaque corrupti vero ad maiores!
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div><!-- contents-->
+    <footer class="footer">
+        <div class="f_top">
+            <div class="logo">McDonald</div>
+            <ul class="f_menu">
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">임차문의</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, facere.<br>
+            TEL : 031-111-1234 C.P : 010-1234-5678<br><br>
+            2020 DOCDELAB © copyright all right reserved.
+        </div>
+    </footer>
+    <script>
+        $(".m_menu").hide();
+        $(".m_btn").click(function(){
+            $(".m_menu").slideToggle()          
+        })
+    </script>
+</body>
+</html>
